@@ -1,0 +1,15 @@
+[ignore]
+.*/dist/.*
+.*/.flow-types/.*
+
+[include]
+
+[libs]
+.flow-types
+
+[lints]
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\flow-disable-next-line
+
+[strict]

@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "standard",
+    "standard-flow",
+    "plugin:flowtype/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:jest/recommended",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "babel",
+    "prettier",
+    "flowtype"
+  ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  },
+  "rules": {
+    "no-dupe-class-members": "off"
+  }
+}

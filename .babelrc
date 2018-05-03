@@ -1,0 +1,18 @@
+{
+  "presets": ["env", "flow"],
+  "retainLines": true,
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-es2015-destructuring",
+    "transform-class-properties",
+    "transform-runtime",
+    "transform-export-extensions",
+    [
+      "transform-builtin-extend",
+      {
+        "globals": ["Error"]
+      }
+    ]
+  ]
+}
+  
