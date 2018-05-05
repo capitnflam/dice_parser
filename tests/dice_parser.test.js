@@ -1,11 +1,11 @@
-import { parse, SyntaxError } from './dice_parser'
+import { parse, SyntaxError } from '../src/dice_parser'
 import {
   ASTConstant,
   ASTDice,
   ASTDiceMultiplier,
   ASTBinaryOperation,
   ASTParen,
-} from './ast'
+} from '../src/ast'
 
 describe('parsing', () => {
   test('parse constant', () => {

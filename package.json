@@ -11,10 +11,10 @@
     "build": "yarn run build-parser && babel src -d dist",
     "prepublish": "yarn run build",
     "clean": "rimraf src/dice_parser.js && rimraf dist",
-    "test": "jest src/",
+    "test": "jest tests/",
     "coverage": "yarn test --coverage",
-    "lint": "eslint src/*.js",
-    "format": "prettier --write src/*.js",
+    "lint": "eslint src/*.js tests/*.js",
+    "format": "prettier --write src/*.js tests/*.js",
     "flow": "flow"
   },
   "devDependencies": {
@@ -22,6 +22,7 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.3",
+    "babel-plugin-source-map-support": "^2.0.1",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-destructuring": "^6.23.0",
@@ -53,6 +54,7 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "source-map-support": "^0.5.5"
   }
 }
