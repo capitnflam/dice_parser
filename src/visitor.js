@@ -10,11 +10,11 @@ import type {
 } from './ast'
 
 export interface Visitor {
-  visit(x: ASTDice): any;
-  visit(x: ASTDiceMultiplier): any;
-  visit(x: ASTConstant): any;
-  visit(x: ASTBinaryOperation): any;
-  visit(x: ASTParen): any;
+  visitDice(x: ASTDice): any;
+  visitDiceMultiplier(x: ASTDiceMultiplier): any;
+  visitConstant(x: ASTConstant): any;
+  visitBinaryOperation(x: ASTBinaryOperation): any;
+  visitParen(x: ASTParen): any;
 
   visit(x: ASTNode): any;
 }
