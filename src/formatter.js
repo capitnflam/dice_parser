@@ -10,7 +10,7 @@ import {
   ASTParen,
 } from './ast'
 
-export class Formatter implements Visitor {
+export default class Formatter implements Visitor {
   visitDice(x: ASTDice): any {
     return `d${x.value}`
   }
