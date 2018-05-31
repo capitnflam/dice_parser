@@ -1,8 +1,8 @@
 {
-  "name": "dnd",
+  "name": "dice_parser",
   "version": "0.1.0",
-  "description": "D&D tools",
-  "main": "index.js",
+  "description": "d20 dice parsing library",
+  "main": "dist/lib.js",
   "author": "capitN.flam",
   "license": "MIT",
   "private": true,

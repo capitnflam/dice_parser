@@ -1,0 +1,10 @@
+/.vscode/
+/src/
+/tests/
+/jest.config.js
+/.babelrc
+/.eslintignore
+/.eslintrc
+/.flowconfig
+/.prettierignore
+/.prettierrc

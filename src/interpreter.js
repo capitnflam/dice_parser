@@ -20,7 +20,7 @@ function* multiplierGenerator(value: number) {
   }
 }
 
-export default class Interpreter implements Visitor {
+export class Interpreter implements Visitor {
   visitDice(x: ASTDice): any {
     const min = 1
     const max = Math.floor(x.value)
